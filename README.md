@@ -72,7 +72,7 @@ curl --location 'http://localhost:8011/api/v1/summarization/task/generic_summari
   "content": "The Laysan honeycreeper (Himatione fraithii), also known as the Laysan ʻapapane or Laysan honeyeater, is an extinct species of finch that was endemic to the island of Laysan in the Northwestern Hawaiian Islands. The bird was first recorded in 1828 and in 1892 received its scientific name from Walter Rothschild, who placed it in the genus Himatione along with the ʻapapane. The specific name, fraithii, refers to George D. Freeth, the self-appointed governor of Laysan, but was misspelled. Rothschild attempted to emend it to freethi in a later publication. This was accepted by most subsequent authors throughout the 20th century, and the bird was also considered a subspecies of the ʻapapane, as H. sanguinea freethii, for most of this time. By the 21st century, after further research, the original name was reinstated and it was considered a full species again. As a Hawaiian honeycreeper, a grouping within the finch subfamily Carduelinae, its ancestors are thought to have come from Asia.",
   "max_length": 500,
   "focus_areas": ["main points", "key findings"]
-}
+}'
 ```
 
 ## Example Task
