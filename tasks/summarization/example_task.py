@@ -17,7 +17,7 @@ class SummarizationTaskInput(BaseModel):
 class SummarizationTaskOutput(BaseModel):
     summary_params: SummaryParams = Field(..., description="Parameters for the generated summary")
 
-@ProviderTaskRegistry.register(Provider.TASK)
+@ProviderTaskRegistry.register(Provider.SUMMARIZATION)
 class GenericSummarizationTask(BaseTask):
     name = "generic_summarization_task"
     prompt_template = """

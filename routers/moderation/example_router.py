@@ -21,7 +21,7 @@ class LLMRouterOutput(BaseModel):
     flag_params: Optional[ContentModerationParams] = Field(None, description="Parameters for flagging content")
     approve_params: Optional[ContentModerationParams] = Field(None, description="Parameters for approving content")
 
-@ProviderRouterRegistry.register(Provider.ROUTER)
+@ProviderRouterRegistry.register(Provider.MODERATION)
 class ContentModerationRouter(BaseRouter):
     name = "content_moderation_router"
     instruction_template = """

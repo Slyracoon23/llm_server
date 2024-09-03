@@ -4,6 +4,6 @@ pydantic
 redis
 aioredis
 openai
-logfire
+logfire[fastapi]
 typing-extensions
 jinja2

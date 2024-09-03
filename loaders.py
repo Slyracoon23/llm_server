@@ -8,7 +8,7 @@ def load_tasks():
         if os.path.isdir(provider_dir):
             for task_file in os.listdir(provider_dir):
                 if task_file.endswith('.py'):
-                    module_name = f"llm_server.tasks.{provider}.{task_file[:-3]}"
+                    module_name = f"tasks.{provider}.{task_file[:-3]}"
                     importlib.import_module(module_name)
                     
                     
@@ -20,5 +20,5 @@ def load_routers():
         if os.path.isdir(provider_dir):
             for router_file in os.listdir(provider_dir):
                 if router_file.endswith('.py'):
-                    module_name = f"llm_server.routers.{provider}.{router_file[:-3]}"
+                    module_name = f"routers.{provider}.{router_file[:-3]}"
                     importlib.import_module(module_name)

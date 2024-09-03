@@ -2,8 +2,8 @@ import os
 from enum import Enum
 
 class Provider(str, Enum):
-    TASK = "task"
-    ROUTER = "router"  # Add this line
+    SUMMARIZATION = "summarization"
+    MODERATION = "moderation"
 
 class Config:
     OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
