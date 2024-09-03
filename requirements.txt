@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pydantic
+redis
+aioredis
+openai
+logfire
+typing-extensions

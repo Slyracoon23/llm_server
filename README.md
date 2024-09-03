@@ -1,10 +1,10 @@
 # LLM Server
 
-LLM Server is a FastAPI-based application that provides a flexible and extensible framework for handling various AI tasks using Large Language Models (LLMs). It supports multiple providers (GitHub, Slack, Discord) and can be easily extended with new tasks and routers.
+LLM Server is a FastAPI-based application that provides a flexible and extensible framework for handling various AI tasks using Large Language Models (LLMs). It supports multiple providers and can be easily extended with new tasks and routers.
 
 ## Features
 
-- Support for multiple providers (GitHub, Slack, Discord)
+- Support for multiple providers
 - Extensible task and router system
 - Redis caching for improved performance
 - OpenAI integration for LLM-based tasks
@@ -61,11 +61,15 @@ The server exposes the following endpoints:
 - `GET /api/v1/{provider}/tasks`: Get available tasks for a provider
 - `POST /api/v1/{provider}/router/{router_name}`: Process a router for a provider
 
+## Example Task
+
+Here's an example of how to create a new task:
+
 ## Adding New Tasks
 
 To add a new task:
 
-1. Create a new Python file in the appropriate provider directory under `tasks/`
+1. Create a new Python file in the `tasks/` directory
 2. Define a new class that inherits from `BaseTask`
 3. Implement the required methods and properties
 4. Register the task using the `@ProviderTaskRegistry.register(Provider.PROVIDER_NAME)` decorator
