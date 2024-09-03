@@ -2,9 +2,9 @@ import asyncio
 from typing import Dict, Any
 from fastapi import HTTPException
 from openai import AsyncOpenAI
-from llm_server.config import Provider
-from llm_server.base import ProviderTaskRegistry, ProviderRouterRegistry
-from llm_server.openai_client import OpenAIClient
+from config import Provider
+from base import ProviderTaskRegistry, ProviderRouterRegistry
+from openai_client import OpenAIClient
 
 class APIHandler:
     @staticmethod

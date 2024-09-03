@@ -2,9 +2,9 @@ from abc import ABC, abstractmethod
 from typing import Dict, Any, Type, ClassVar, List
 from pydantic import BaseModel
 from openai import AsyncOpenAI
-from llm_server.config import Provider
-from llm_server.template_renderer import TemplateRenderer
-from llm_server.openai_client import OpenAIClient
+from config import Provider
+from template_renderer import TemplateRenderer
+from openai_client import OpenAIClient
 
 class TaskOutput(BaseModel):
     action_type: str

@@ -1,6 +1,6 @@
-from llm_server.application import Application
-from llm_server.loaders import load_tasks, load_routers
-from llm_server.base import ProviderTaskRegistry, ProviderRouterRegistry
+from application import Application
+from loaders import load_tasks, load_routers
+from base import ProviderTaskRegistry, ProviderRouterRegistry
 
 if __name__ == "__main__":
     load_tasks()

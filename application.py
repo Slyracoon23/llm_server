@@ -4,12 +4,12 @@ from fastapi.responses import JSONResponse
 from typing import Dict, Any
 import logging
 import logfire
-from llm_server.config import Provider
-from llm_server.openai_client import OpenAIClient
-from llm_server.api_handler import APIHandler
+from config import Provider
+from openai_client import OpenAIClient
+from api_handler import APIHandler
 from openai import OpenAI
 from contextlib import asynccontextmanager
-from llm_server.cache import redis_cache
+from cache import redis_cache
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)

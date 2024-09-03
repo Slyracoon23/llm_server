@@ -2,9 +2,7 @@ import os
 from enum import Enum
 
 class Provider(str, Enum):
-    GITHUB = "github"
-    SLACK = "slack"
-    DISCORD = "discord"
+    TASK = "task"
     ROUTER = "router"  # Add this line
 
 class Config:

@@ -6,3 +6,4 @@ aioredis
 openai
 logfire
 typing-extensions
+jinja2

@@ -2,7 +2,7 @@ import os
 from openai import AsyncOpenAI
 from pydantic import BaseModel
 from typing import Type, List
-from llm_server.config import Config
+from config import Config
 import logfire  # Add this import
 
 
